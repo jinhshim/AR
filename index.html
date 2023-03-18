@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <script src="https://aframe.io/releases.1.0.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/Ar.js/master/aframe/build/aframe-ar.js"></script>
+    <body style="margin: 0px; overflow: hidden;">
+        <a-scene embedded arjs>
+            <a-assets> 
+               <a-asset-item id="apple" srv="apple.glb" scale="1 1 1">
+            </a-assets> 
+            <a-marker type="pattern" url="hiro.patt">
+                <!-- <a-box position="0 -1 0" scale="1 1 1" color="grey"></a-box> -->
+                <a-entity gltf-model="#apple" rotation="-90 0 0"></a-entity>
+            </a-marker>
+        <a-entity camera></a-entity>
+        </a-scene>
+    </body>
+</html>
